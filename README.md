@@ -1,66 +1,113 @@
-# Phase 2 Project
-
-Another module down--you're almost half way there!
-
-![awesome](https://raw.githubusercontent.com/learn-co-curriculum/dsc-phase-2-project-campus/master/halfway-there.gif)
-
-All that remains in Phase 2 is to put our newfound data science skills to use with a large project! This project should take 20 to 30 hours to complete.
-
 ## Project Overview
 
-For this project, you will use regression modeling to analyze house sales in a northwestern county.
+We are producing a new game show -- 'Flip' -- in which a group of contestants and a group of experts working for the show are both given a lump sum to buy a house to buy in King County, WA. Both teams then sell their house, and if the contestants make more profit than the experts, then they get to keep the money from the house sale. <br>
 
-### The Data
+It is obviously in our best interest to minimise the chance of this happening. To this end, we analyze two years of housing sales from the county to generate a model showing how various features of a house are correlated to its sale price. <br>
 
-This project uses the King County House Sales dataset, which can be found in  `kc_house_data.csv` in the data folder in this repo. The description of the column names can be found in `column_names.md` in the same folder. As with most real world data sets, the column names are not perfectly described, so you'll have to do some research or use your best judgment if you have questions about what the data means.
+We can then use his model to find the most undervalued houses on the market and maximise the chances of winning the contest. <br>
 
-It is up to you to decide what data from this dataset to use and how to use it. If you are feeling overwhelmed or behind, we recommend you ignore some or all of the following features:
+The inferential model revealed that being by the waterfront and the grade of the house multipled by the sqft of living space gave the biggest boost to prices. <br>
 
-* date
-* view
-* sqft_above
-* sqft_basement
-* yr_renovated
-* zipcode
-* lat
-* long
-* sqft_living15
-* sqft_lot15
+Location was also found to be a key factor, with the popularity of Medina, Clyde Hill, Capitol Hill and Queen Anne all giving houses in the area a higher valuation. <br>
+
+The average prediction from the model is about 15 percent out, which means we can be confident of finding underpriced houses. Being wrong occassionally is acceptable as we need to lose the contest from time to time in order to keep the show interesting and win the ratings war.
+
+<img src="images/logo.png" style="width: 700px;"/>
+
+<br>
+<br>
 
 ### Business Problem
 
-It is up to you to define a stakeholder and business problem appropriate to this dataset.
+To attract high ratings with an entertaining show that strikes a good balance between difficulty and achievability. <br>
 
-If you are struggling to define a stakeholder, we recommend you complete a project for a real estate agency that helps homeowners buy and/or sell homes. A business problem you could focus on for this stakeholder is the need to provide advice to homeowners about how home renovations might increase the estimated value of their homes, and by what amount.
+This relies upon the expert team winnnig most of the time. <br>
 
-## Deliverables
+We also need to make sure we stack the odds in out favour in order not to keep having to pay out the big prize.
 
-There are three deliverables for this project:
+<img src="images/Seattle.jpg" style="width: 700px;"/>
+<br>
+<br>
 
-* A **GitHub repository**
-* A **Jupyter Notebook**
-* A **non-technical presentation**
+### The Data
 
-Review the "Project Submission & Review" page in the "Milestones Instructions" topic for instructions on creating and submitting your deliverables. Refer to the rubric associated with this assignment for specifications describing high-quality deliverables.
+Data drawn from the dataset of house sales in King County, WA, for 2014 and 2015.
 
-### Key Points
+<br>
+<br>
 
-* **Your deliverables should explicitly address each step of the data science process.** Refer to [the Data Science Process lesson](https://github.com/learn-co-curriculum/dsc-data-science-processes) from Topic 19 for more information about process models you can use.
+### Methods
 
-* **Your Jupyter Notebook should demonstrate an iterative approach to modeling.** This means that you begin with a basic model, evaluate it, and then provide justification for and proceed to a new model. After you finish refining your models, you should provide 1-3 paragraphs discussing your final model - this should include interpreting at least 3 important parameter estimates or statistics.
+The dataset of almost 25,000 sales was analyzed to find the strength of relationships between features of a house and its achieved sale price. <br>
 
-* **Based on the results of your models, your notebook and presentation should discuss at least two features that have strong relationships with housing prices.**
+The end goal was to create an accurate model, using the features most related to the price, and which boosted them the most. <br>
 
-## Getting Started
+To do this, we created a series of models, each with gradually fewer features as we got rid of those that were either irrelevant to the task, or which had little effect on price.
 
-Start on this project by forking and cloning [this project repository](https://github.com/learn-co-curriculum/dsc-phase-2-project) to get a local copy of the dataset.
+Each model was then put to the test with previously unseen data, and its perfomance calculated in terms of how accurately it could account for the actual price. <br>
 
-We recommend structuring your project repository similar to the structure in [the Phase 1 Project Template](https://github.com/learn-co-curriculum/dsc-project-template). You can do this either by creating a new fork of that repository to work in or by building a new repository from scratch that mimics that structure.
+In order to investigate the link between a house's location and its sale price, we added the city that the house's zipcode is registered to, or neighbourhood in the case of Seattle, as a new feature. <br>
 
-## Project Submission and Review
+<img src="images/seattle_heat.png" style="width: 700px;"/>
+<br>
+<br>
 
-Review the "Project Submission & Review" page in the "Milestones Instructions" topic to learn how to submit your project and how it will be reviewed. Your project must pass review for you to progress to the next Phase.
+### Headline Results
+<br>
 
-## Summary
+The inferential model revealed that being by the waterfront and the grade of the house multipled by the sqft of living space gave the biggest boost to prices. <br>
 
-This project will give you a valuable opportunity to develop your data science skills using real-world data. The end-of-phase projects are a critical part of the program because they give you a chance to bring together all the skills you've learned, apply them to realistic projects for a business stakeholder, practice communication skills, and get feedback to help you improve. You've got this!
+Location was also found to be a key factor, with the popularity of Medina, Clyde Hill, Capitol Hill and Queen Anne all giving houses in the area a higher valuation. <br>
+
+*  **the grade of the house multipled by the sqft of living space is the most common factor that gives the biggest boost to prices**
+
+<img src="images/worldwide_bo.png" style="width: 700px;"/>
+
+<br>
+<br>
+
+* **Location was also found to be a key factor, with the popularity of Medina, Clyde Hill, Capitol Hill and Queen Anne all giving houses in the area a higher sale price**
+<br>
+
+<img src="images/profit_v_genre.png" style="width: 700px;"/>
+<br>
+<br>
+
+* **Being by the water increases the value of a house more than any other factor, but it is quite a rare feature so will only occassionally be relevant**
+<br>
+
+<img src="images/profit_v_genre.png" style="width: 700px;"/>
+<br>
+<br>
+
+* **The number of bedrooms and bathrooms is less important than the size of the living space**
+<br>
+
+<img src="images/adventure_budget_pl_sub_scatter.png" style="width: 700px;"/>
+<br>
+<br>
+
+
+
+### Conclusion
+
+This analysis leads to three recommendations for the show's producers to maximise the odds of winning each week, while keeping the show competitive enough to attract viewers
+
+**Location, Location, Location** 
+
+* The expert's should look for underpriced properties in , , and 
+
+**Big is beautiful**
+
+* Bigger properties add onto the sale value, and a large space combined with a high grade is rocket fuel for prices. Don't be distracted by bathrooms and bedrooms
+
+**Pacific views**
+
+* The most desirable feature is a waterfront property, but their rarity means finding such a bargain will not be the main weekly consideration
+
+
+### Next steps
+
+*  Keep collecting data on latest sale prices as we need to be ahead of the game in discerning shifts in trends, and in knowing which places are hot, and which are not
+ 
+
