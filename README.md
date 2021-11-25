@@ -25,7 +25,7 @@ This relies upon the expert team winnnig most of the time. <br>
 
 We also need to make sure we stack the odds in out favour in order not to keep having to pay out the big prize.
 
-<img src="images/Seattle.jpg" style="width: 700px;"/>
+<img src="images/seattle.jpg" style="width: 700px;"/>
 <br>
 <br>
 
