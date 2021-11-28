@@ -23,7 +23,7 @@ To attract high ratings with an entertaining show that strikes a good balance be
 
 This relies upon the expert team winnnig most of the time. <br>
 
-We also need to make sure we stack the odds in out favour in order not to keep having to pay out the big prize.
+We also need to make sure we stack the odds in our favour in order not to keep having to pay out the big prize.
 
 <img src="images/seattle.jpg" style="width: 700px;"/>
 <br>
