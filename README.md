@@ -72,7 +72,7 @@ In order to investigate the link between a house's location and its sale price, 
 * **The number of bedrooms and bathrooms is less important than the size of the living space and location.**
 <br>
 
-<img src="images/seattle_heat.png" style="width: 700px;"/>
+<img src="images/shutterstock_620724863.jpg" style="width: 700px;"/>
 <br>
 <br>
 
@@ -107,8 +107,6 @@ This analysis leads to three recommendations for the show's producers to maximis
 
 * Has proximity to urban centres become less desirable now working from home has become more popular?
  
-<br>
 
-<img src="images/shutterstock_620724863.jpg" style="width: 700px;"/>
 <br>
 <br>
